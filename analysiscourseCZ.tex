@@ -4,6 +4,7 @@
 \usepackage{amssymb}
 \usepackage{amscd,amsmath}
 \usepackage{amssymb,amsmath,latexsym}
+\usepackage{color}
 \DeclareMathAlphabet{\bsf}{OT1}{cmss}{bx}{n}
 
 \newenvironment{poznamka}{\par\begingroup\setlength{\leftskip}{2cm}\setlength{\parindent}{0pt}}{\par\endgroup}
@@ -14,6 +15,8 @@
 \renewcommand{\labelenumi}{{\rm(\theenumi)}}
 
 \begin{document}
+
+\newcommand{\fix}[1]{{\color{red} #1}}
 
 \def\sint{\text{(II)}\!\!\!\int}    \def\fint{\text{(I)}\int}
 \def\setof#1#2{\{#1 \, |\, #2\} }  \def\set#1{\{#1 \} } \def\ve#1{\bsf#1}
@@ -4515,10 +4518,10 @@ s $\beta_j,\gamma_j,\delta_j$ reálnými, $x^2+\gamma_j x+\delta_j$ ireducibiln�
  
  \bigskip
  
- {\bf 4.2. Věta.} {\em Buď $J$ obor integrity a mějme funkci $\nu:J\to\Nbb$ a pravidlo dělení se zbytkem
-  pro $a,b\neq 0$ a $b$  nedělící $a$,
+ {\bf 4.2. Věta.} {\em Buď $J$ obor integrity \fix{a} mějme funkci $\nu:J\to\Nbb$ a pravidlo dělení se zbytkem
+  \fix{pro} $a,b\neq 0$ a $b$  nedělící $a$,
   $$
-  a=sb+r \qtq{s} \nu(r)<\nu(b).
+  a=sb+r \qtq{s} \nu(r)\fix{<}\nu(b).
   $$
  Potom pro každá $a,b\neq 0$ existují $x,y$ taková,že $xa+yb$ je největší společný dělitel $a,b$.
  
@@ -6126,7 +6129,7 @@ Definujeme-li $d_Y(x,y)=d(x,y)$ pro $x,y\in Y$ získáme na $Y$ metriku; tak vyt
  
  {\bf 3.1. Konvergence.} Posloupnost $(x_n)_n$ v metrickém prostoru $(X,d)$ {\em konverguje} k $x\in X$ platí-li
  $$
- \forall\epsilon>0\ \exists n_0\ \text{takové že}\ \forall n\geq n_0,\ d(x_n,x)<\epsilon.
+ \forall\epsilon>0\ \exists n_0\ \text{\fix{takové že}}\ \forall n\geq n_0,\ d(x_n,x)<\epsilon.
  $$
  Mluvíme pak o {\em konvergentní posloupnosti} a $x$ se nazývá její {\em limitou}; píšeme
  $$
@@ -6426,7 +6429,7 @@ Položme
  \bigskip
  
  
- {\bf 5.1.} Budte $(X_i,d_i)$, $i=1,\dots,n$, metrické prostory. Na kartézském součinu
+ {\bf 5.1.} Budte $(\fix{X_i},d_i)$, $i=1,\dots,n$, metrické prostory. Na kartézském součinu
  $$
  \prod_{i=1}^nX_i
  $$
@@ -6799,7 +6802,7 @@ spojité (viz XIII.5.3).
 \bigskip
 
 {\bf 1.4. Skládání.} Vektorové funkce $\ve{f}:D\to \Ebb_m$, 
-$D\sue \Ebb_n$, a  $\ve{g}:D'\to \Ebb_k$, $D'\sue \Ebb_m$ můžeme skládat
+$D\sue \Ebb_n$, a  $\ve{g}:D'\to \Ebb_k$, $D\fix{'}\sue \fix{\Ebb_m}$ můžeme skládat
 jestliže $\ve{f}[D]\sue D'$,
 a píšeme 
 $$
@@ -6893,7 +6896,7 @@ $$
 
 \bigskip
 
-{\bf 3.3. Totální diferenciál.} Řekneme, že funkce $f$ má {\em totální diferenciál} v bodě  $\ve{a}$ existuje-li funkce $\mu$ spojitá v okolí
+{\bf 3.3. Totální diferenciál.} Řekneme, že funkce $f$ má {\em totální diferenciál} v bodě  $\fix{\ve{a}}$ existuje-li funkce $\mu$ spojitá v okolí
  $U$ bodu  $\ve{o}$ taková, že $\mu(\ve{o})=0$ 
 (v jiné, ekvivlentní, formulaci se požaduje $\mu$ definovaná v
 $U\smin\set{\ve{o}}$ 
@@ -7087,7 +7090,7 @@ a potom, jako derivace druhých řádů,
 $$
 \padd{f}{x}{y}=2y\cos(y^2+x)-2xy\sin(y^2+x)=\padd{f}{y}{x}.
 $$
-Ať už to překvapí nebo ne, naznačuje to, že parciální derivace vyšších řádů možná nezávisí na pořadí derivování.  A je to v podstatě pravda -- pokud všechny derivace o které jde jsou spojité
+Ať už to překvapí \fix{nebo} ne, naznačuje to, že parciální derivace vyšších řádů možná nezávisí na pořadí derivování.  A je to v podstatě pravda -- pokud všechny derivace o které jde jsou spojité
 (je ale třeba hned poznamenat, že bez tohoto předpokladu
 ta rovnost platit nemusí).
 
@@ -7190,7 +7193,7 @@ a nechť je $g_k(b)=a_k$ pro všechna $k=1,\dots,n$. Položme
 $$
 F(t)=f(\ve{g}(t))=f(g_1(t),\dots,g_n(t)).
 $$
-Potom má $F$ derivaci v  $b$, totiž
+\fix{Potom} má $F$ derivaci v  $b$, totiž
 $$
 F'(b)=\sum_{k=1}^n\pad{f(\ve{a})}{x_k}\cdot g'_k(b).
 $$
@@ -7220,7 +7223,7 @@ $$
 Nechť mají funkce $g_k(t_1,\dots,t_r)$ parciální derivace 
 v $\ve{b}=(b_1,\dots,b_r)$ a nechť je $g_k(\ve{b})=a_k$ pro všechna $k=1,\dots,n$. Potom má funkce
 $$
-(f\circ \ve{g})(t_1,\dots,t_r)=f(\ve{g}(\ve{t}))=f(g_1(\ve{t}),\dots,g_n(\ve{t}))
+(f\circ \ve{g})(t_1,\dots,t_r)=f(\ve{g}(\fix{\ve{t}}))=f(g_1(\fix{\ve{t}}),\dots,g_n(\fix{\ve{t}}))
 $$
 všechny parciální derivace v $b$, a platí
 $$
@@ -7359,11 +7362,11 @@ Rádi bychom našli řešení $y_1,\dots,y_m$. Lépe řečeno, s užitím úmluv
 \begin{equation}
 F_k(\ve{x},y_1,\dots y_m)=0, \quad k=1,\dots,m \tag{$*$}
 \end{equation}
-a hledáme řešení $y_k=f_k(\ve{x})$ ($=f_k(x_1,\dots,x_n)$).
+a hledáme řešení $y_k=f_k(\ve{x})$ ($=\fix{f_k}(x_1,\dots,x_n)$).
 
 \bigskip
 
-{\bf 1.2.} I v nejjednodušších případech nemusíme mít nutně řešení, o jednoznačném ani nemluvě.
+{\bf 1.2.} I v nejjednodušších případech nemusíme mít nutně řešení, o \fix{jednoznačném} ani nemluvě.
 Vezměme např. tuto jednoduchou rovnici:
 $$
 F(x,y)=x^2+y^2-1=0.
@@ -7401,7 +7404,7 @@ Všimněte si, že v kritických bodech $(1,0)$ a $(-1,0)$ máme
 
 {\bf 1.3.}V této kapitole ukážeme, že pro funkce $F_k$ se spojitými parciálními derivacemi se nemůže stát nic horšího než v uvedeném příkladě:
 \begin{itemize}
-\item budeme muset mít nějaké body $\ve{x}^0$, $\ve{y}^0$ pro které $F_k(\ve{x}^0,\ve{y}^0) = 0$ kterými začneme,
+\item budeme muset mít nějaké body $\ve{x}^0$, $\ve{y}^0$ pro které $F_k(\ve{x}^0,\ve{y}^0) \fix{= 0}$ kterými začneme,
 \item s jistými výjimkami budeme pak mít ``okénka'' $U\times V$ taková, že pro $\ve{x}\in U$ bude přesně jedno $\ve{y}\in V$, t.j.,
 $y_k=f(x_1,\dots,x_n)$, splňující daný systém rovnic;
 \item a ty výjimky přirozeně rozšiřují to, co jsme viděli v $(**)$ nahoře: místo podmínky $\pad{F}{y}(x^0,y^0)\neq 0$ budeme mít
