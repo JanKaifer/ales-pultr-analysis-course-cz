@@ -1,11 +1,4 @@
-# ales-pultr-analysis-course-cz
-Zdroják k skriptům na analýzu.
+# Skripta na analýzu
+Toto jsou skripta a [Aleše Pultra](https://www.mff.cuni.cz/cs/fakulta/organizacni-struktura/lide?hdl=501).
 
-## Contributing
-Pokud najdete nějakou chybu, tak otevřete PR-ko.
-Ať se nám ze skript lépe učí.
-
-## Credits
-Toto je dílo [Aleše Pultra](git@github.com:JanKaifer/ales-pultr-analysis-course-cz.git).
-
-Tady se řeší pouze připomínky a drobné chyby.
+Tady se spolužáky pouze řešíme drobné opravy překlepů se skriptech.
